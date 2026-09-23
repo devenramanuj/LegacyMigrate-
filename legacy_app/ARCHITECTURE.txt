@@ -1,0 +1,15 @@
+SYSTEM SPECIFICATION: Inventory & Order Management System
+
+Components:
+1. Database: SQLite relational storage (legacy_store.db)
+2. Entities:
+   - inventory (id, item_name, quantity, unit_price, updated_at)
+   - orders (id, customer_name, item_id, qty, total_price, order_date)
+3. Operations:
+   - Add new stock items
+   - Search inventory by string pattern
+   - Place and deduct orders
+4. Known Limitations:
+   - Procedural architecture without REST API endpoints
+   - Insecure SQL queries susceptible to injection
+   - Missing unit tests and CI verification
